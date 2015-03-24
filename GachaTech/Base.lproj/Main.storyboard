@@ -34,17 +34,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="l42-rs-5rU" kind="modal" identifier="result" id="f1Z-f0-01q"/>
+                        <segue destination="l42-rs-5rU" kind="modal" identifier="result" modalTransitionStyle="crossDissolve" id="f1Z-f0-01q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="129.59999999999999" y="315.24000000000001"/>
         </scene>
-        <!--View Controller-->
+        <!--Result View Controller-->
         <scene sceneID="oM6-BQ-agn">
             <objects>
-                <viewController id="l42-rs-5rU" sceneMemberID="viewController">
+                <viewController id="l42-rs-5rU" customClass="ResultViewController" customModule="GachaTech" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aZC-6X-4wC"/>
                         <viewControllerLayoutGuide type="bottom" id="BSd-Jo-J5e"/>
@@ -68,6 +68,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="haikeiImageView" destination="RB2-Ba-e9p" id="6dI-wC-jvp"/>
+                        <outlet property="monsterImageView" destination="YgA-gl-DTk" id="DHb-JX-GUN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nm8-6K-0aV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
