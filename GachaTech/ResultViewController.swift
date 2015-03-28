@@ -70,7 +70,6 @@ class ResultViewController: UIViewController {
     //このResultViewControllerが表示される度に呼び出すメソッド
     override func viewDidAppear(animated: Bool) {
         
-        
         var animation = CABasicAnimation(keyPath: "transform")
         //アニメーションの中でもtransform(変形)させるキーパスを指定
         
@@ -98,6 +97,7 @@ class ResultViewController: UIViewController {
     @IBAction func modoru() {
         self.dismissViewControllerAnimated(true, completion: nil)
         //segue のアニメーションをcross disolve
+        //コメントはすべてコードよりも上に書く事が理想
     }
 
     /*
