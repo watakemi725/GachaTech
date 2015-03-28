@@ -67,8 +67,6 @@ class ResultViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    
     //このResultViewControllerが表示される度に呼び出すメソッド
     override func viewDidAppear(animated: Bool) {
         
